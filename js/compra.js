@@ -1,54 +1,55 @@
 var cart = []; // Array para almacenar los productos en el carrito
-    var total = 0; // Inicializar el total
+        var total = 0; // Inicializar el total
 
-    function addToCart(productName, price) {
-        // Agregar el producto al carrito
-        cart.push({name: productName, price: price});
-        
-        // Actualizar la lista del carrito
-        updateCart();
-        
-        // Actualizar el total
-        total += price;
-        updateTotal();
-    }
+        function addToCart(productName, price) {
+            // Agregar el producto al carrito
+            cart.push({ name: productName, price: price });
 
-    function removeFromCart(index) {
-        // Remover el producto del carrito
-        total -= cart[index].price;
-        cart.splice(index, 1);
+            // Actualizar la lista del carrito
+            updateCart();
 
-        // Actualizar la lista del carrito
-        updateCart();
+            // Actualizar el total
+            total += price;
+            updateTotal();
+        }
 
-        // Actualizar el total
-        updateTotal();
-    }
+        function removeFromCart(index) {
+            // Remover el producto del carrito
+            total -= cart[index].price;
+            cart.splice(index, 1);
 
-    function updateCart() {
-        var cartList = document.getElementById('cart-items');
-        cartList.innerHTML = ''; // Limpiar la lista antes de actualizar
+            // Actualizar la lista del carrito
+            updateCart();
 
-        cart.forEach(function(item, index) {
-            var listItem = document.createElement('li');
-            listItem.textContent = item.name + ' - $' + item.price;
-            var removeButton = document.createElement('button');
-            removeButton.textContent = 'Eliminar';
-            removeButton.classList.add('btn', 'btn-danger', 'btn-sm', 'ml-2');
-            removeButton.onclick = function() {
-                removeFromCart(index);
-            };
+            // Actualizar el total
+            updateTotal();
+        }
 
-            // Crear un contenedor para el botón eliminar
-            var buttonContainer = document.createElement('div');
-            buttonContainer.classList.add('remove-button-container');
-            buttonContainer.appendChild(removeButton);
+        function updateCart() {
+            var cartList = $('#cart-items');
+            cartList.empty(); // Limpiar la lista antes de actualizar
 
-            listItem.appendChild(buttonContainer);
-            cartList.appendChild(listItem);
+            $.each(cart, function (index, item) {
+                var listItem = $('<li>').text(item.name + ' - $' + item.price);
+                var removeButton = $('<button>').text('Eliminar').addClass('btn btn-danger btn-sm ml-2').click(function () {
+                    removeFromCart(index);
+                });
+
+                // Crear un contenedor para el botón eliminar
+                var buttonContainer = $('<div>').addClass('remove-button-container').append(removeButton);
+
+                listItem.append(buttonContainer);
+                cartList.append(listItem);
+            });
+        }
+
+        function updateTotal() {
+            $('#total').html('<h3>Total: $' + total + '</h3>');
+        }
+
+        // Ejemplo de uso:
+        $(document).ready(function () {
+            addToCart('Producto 1', 10);
+            addToCart('Producto 2', 20);
+            addToCart('Producto 3', 30);
         });
-    }
-
-    function updateTotal() {
-        document.getElementById('total').innerHTML = '<h3>Total: $' + total + '</h3>';
-    }
