@@ -1,6 +1,25 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+
+/* Estilos para el navbar */
+.navbar {
+    padding: 20px 0;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+}
+
+
 header {
     background-color: #c0ac86;
     color: #fff;

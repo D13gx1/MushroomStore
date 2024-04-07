@@ -6,11 +6,6 @@ body {
 }
 
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
 /* Estilos para el navbar */
 .navbar {
     padding: 20px 0;
@@ -24,6 +19,7 @@ body {
     padding: 0.5rem 1rem;
 }
 
+
 /* Estilos para el carrusel */
 .carousel-item img {
     height: 500px;
@@ -32,6 +28,11 @@ body {
 
 .carousel-control-prev, .carousel-control-next {
     width: 5%;
+}
+/* container */
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* Estilos para la sección de tienda */

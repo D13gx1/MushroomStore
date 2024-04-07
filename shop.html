@@ -53,7 +53,7 @@
                             <h5 class="card-title">Hongos Portobello</h5>
                             <p class="card-text">Deliciosos hongos Portobello cultivados orgánicamente.</p>
                             <p class="card-text">Precio: $10</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-primary" onclick="addToCart('Hongos Portobello', 10)">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                             <h5 class="card-title">Setas Shiitake</h5>
                             <p class="card-text">Setas Shiitake frescas, ideales para platos asiáticos.</p>
                             <p class="card-text">Precio: $12</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-primary" onclick="addToCart('Setas Shiitake', 12)">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -75,15 +75,15 @@
                             <h5 class="card-title">Champiñones Blancos</h5>
                             <p class="card-text">Champiñones blancos frescos y suaves.</p>
                             <p class="card-text">Precio: $8</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-primary" onclick="addToCart('Champiñones Blancos', 8)">Comprar</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="text-center mt-4">
-        </div>
+        <div class="text-center mt-4"></div>
     </section>
+    
     <section id="shop" class="shop">
         <div class="container">
             <div class="row mt-4">
@@ -94,7 +94,7 @@
                             <h5 class="card-title">Hongos Morchella</h5>
                             <p class="card-text">Hongos Morchella, exquisitos y apetitosos.</p>
                             <p class="card-text">Precio: $11</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-primary" onclick="addToCart('Hongos Morchella', 11)">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -102,10 +102,10 @@
                     <div class="card">
                         <img src="img/hongos/Chanetrelle.jpg" class="card-img-top" alt="Producto 2">
                         <div class="card-body">
-                            <h5 class="card-title">Hongos Chanterelle, frezcos y sabrosos.</h5>
-                            <p class="card-text">.</p>
+                            <h5 class="card-title">Hongos Chanterelle</h5>
+                            <p class="card-text">Hongos Chanterelle, frescos y sabrosos.</p>
                             <p class="card-text">Precio: $10</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-primary" onclick="addToCart('Hongos Chanterelle', 10)">Comprar</a>
                         </div>
                     </div>
                 </div>
@@ -116,18 +116,27 @@
                             <h5 class="card-title">Trufas</h5>
                             <p class="card-text">Deliciosas trufas, acompañante perfecto para platos con carne.</p>
                             <p class="card-text">Precio: $15</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
+                            <a href="#" class="btn btn-primary" onclick="addToCart('Trufas', 15)">Comprar</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="text-center mt-4">
-        </div>
+        <div class="text-center mt-4"></div>
     </section>
 
-
-
+    <div id="cart" class="text-center mt-4">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items">
+            <!-- Aquí se añadirán los elementos del carrito -->
+        </ul>
+        <div id="total" class="mt-3">
+            <h3>Total: $0</h3>
+        </div>
+    </div>
+    
+    
+    <script src="js/compra.js"></script>
 </body>
 
 </html>
