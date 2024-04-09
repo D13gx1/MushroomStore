@@ -1,4 +1,8 @@
 /* Estilos generales */
+.brand-name {
+    font-family: 'Arial', sans-serif; /* Cambia 'Arial' a la fuente que desees utilizar */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;

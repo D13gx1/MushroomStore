@@ -46,7 +46,7 @@ var cart = []; // Array para almacenar los productos en el carrito
         function updateTotal() {
             $('#total').html('<h3>Total: $' + total + '</h3>');
         }
-
+    
         // Ejemplo de uso:
         $(document).ready(function () {
             addToCart('Producto 1', 10);
