@@ -1,22 +1,27 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa; /* Color de fondo */
-    padding-top: 60px; /* Ajuste para el navbar fijo en la parte superior */
+    background-color: #f8f9fa;
+    /* Color de fondo */
+    padding-top: 60px;
+    /* Ajuste para el navbar fijo en la parte superior */
 }
 
 .container {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #fff; /* Fondo del formulario */
+    background-color: #fff;
+    /* Fondo del formulario */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra */
 }
 
 .container h1 {
     text-align: center;
     margin-bottom: 30px;
-    color: #333; /* Color del texto */
+    color: #333;
+    /* Color del texto */
 }
 
 label {
@@ -28,25 +33,37 @@ input[type="text"],
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc; /* Borde del campo */
+    border: 1px solid #ccc;
+    /* Borde del campo */
     border-radius: 5px;
     margin-bottom: 20px;
 }
 
 textarea {
-    height: 150px; /* Altura del área de texto */
+    height: 150px;
+    /* Altura del área de texto */
 }
 
 input[type="submit"] {
-    background-color: #007bff; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
+    background-color: #007bff;
+    /* Color de fondo del botón */
+    color: #fff;
+    /* Color del texto del botón */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
-    
+
 input[type="submit"]:hover {
-    background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+    background-color: #0056b3;
+    /* Color de fondo del botón al pasar el ratón */
+}
+
+footer {
+    background-color: #3a4921;
+    /* Color verde musgo */
+    color: #ffffff;
+    /* Color del texto en el footer */
 }

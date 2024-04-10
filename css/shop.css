@@ -1,6 +1,7 @@
 /* Estilos generales */
 .brand-name {
-    font-family: 'Arial', sans-serif; /* Cambia 'Arial' a la fuente que desees utilizar */
+    font-family: 'Arial', sans-serif;
+    /* Cambia 'Arial' a la fuente que desees utilizar */
 }
 
 body {
@@ -27,6 +28,23 @@ body {
     padding: 0.5rem 1rem;
 }
 
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #3a4921;
+    ;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #e4e4e4;
+}
+
 /* Estilos para el carrusel */
 .carousel-item img {
     height: 500px;
@@ -39,8 +57,10 @@ body {
 }
 
 .card-img-top {
-    height: 300px; /* Establece la altura deseada */
-    object-fit: cover; /* Para que la imagen cubra completamente el contenedor */
+    height: 300px;
+    /* Establece la altura deseada */
+    object-fit: cover;
+    /* Para que la imagen cubra completamente el contenedor */
 }
 
 /* Estilos para la sección de shop */
@@ -93,8 +113,16 @@ body {
     font-weight: bold;
     color: #333;
 }
+
 /* Estilos para el contenedor del botón eliminar */
 .remove-button-container {
-    display: inline-block; /* Para que los botones estén en la misma línea */
+    display: inline-block;
+    /* Para que los botones estén en la misma línea */
 }
 
+footer {
+    background-color: #3a4921;
+    /* Color verde musgo */
+    color: #ffffff;
+    /* Color del texto en el footer */
+}

@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="index2.html">
+            <a class="navbar-brand" href="index.html">
                 <img src="img/conPng.png" alt="Logo" height="50">Cucumelo
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index2.html">Inicio</a>
+                        <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="somos.html">Nosotros</a>
@@ -41,46 +41,48 @@
             </div>
         </div>
     </nav>
-
-    <div class="container mt-5">
-        <div id="registrationResult"></div> <!-- Contenedor para la tarjeta de resultado -->
-        <div class="card" style="display: none;" id="registrationSuccessCard">
-            <div class="card-body">
-                <h5 class="card-title">Registrado con éxito</h5>
-                <p class="card-text">¡Gracias por registrarte!</p>
-                <img src="img/hongos/happyMushroom.png" class="img-fluid" alt="Imagen de éxito" style="height: 55px;">
+    <section>
+        <div class="container mt-5">
+            <div id="registrationResult"></div> <!-- Contenedor para la tarjeta de resultado -->
+            <div class="card" style="display: none;" id="registrationSuccessCard">
+                <div class="card-body">
+                    <h5 class="card-title">Registrado con éxito</h5>
+                    <p class="card-text">¡Gracias por registrarte!</p>
+                    <img src="img/hongos/happyMushroom.png" class="img-fluid" alt="Imagen de éxito"
+                        style="height: 55px;">
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <h1 class="card-title">Formulario de Registro</h1>
-                <form id="registrationForm">
-                    <div class="form-group">
-                        <label for="name">Nombre:</label>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" class="form-control" id="email" name="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Contraseña:</label>
-                        <input type="password" class="form-control" id="password" name="password">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Registrarse </button>
-                    <!-- Pie de página -->
-                    <footer class="text-center mt-5 py-3">
-                        <p>&copy; 2024 Cucumelo</p>
-                    </footer>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Formulario de Registro</h1>
+                    <form id="registrationForm">
+                        <div class="form-group">
+                            <label for="name">Nombre:</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contraseña:</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Registrarse </button>
+    </section>
+    <!-- Pie de página -->
+    <footer class="text-center mt-5 py-3">
+        <p>&copy; 2024 Cucumelo</p>
+    </footer>
 
-                    <!-- jQuery -->
-                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-                    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-                    <script src="js/validacion.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/validacion.js"></script>
 
-                    
+
 </body>
 
 </html>

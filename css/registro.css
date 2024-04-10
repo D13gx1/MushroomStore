@@ -1,22 +1,27 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa; /* Color de fondo */
-    padding-top: 60px; /* Ajuste para el navbar fijo en la parte superior */
+    background-color: #f8f9fa;
+    /* Color de fondo */
+    padding-top: 60px;
+    /* Ajuste para el navbar fijo en la parte superior */
 }
 
 .container {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #fff; /* Fondo del formulario */
+    background-color: #fff;
+    /* Fondo del formulario */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra */
 }
 
 .container h1 {
     text-align: center;
     margin-bottom: 30px;
-    color: #333; /* Color del texto */
+    color: #333;
+    /* Color del texto */
 }
 
 label {
@@ -29,14 +34,17 @@ input[type="email"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc; /* Borde del campo */
+    border: 1px solid #ccc;
+    /* Borde del campo */
     border-radius: 5px;
     margin-bottom: 20px;
 }
 
 input[type="submit"] {
-    background-color: #28a745; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
+    background-color: #28a745;
+    /* Color de fondo del botón */
+    color: #fff;
+    /* Color del texto del botón */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -45,8 +53,17 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #218838; /* Color de fondo del botón al pasar el ratón */
+    background-color: #218838;
+    /* Color de fondo del botón al pasar el ratón */
 }
-img-fluid{
+
+img-fluid {
     height: 10px;
+}
+
+footer {
+    background-color: #3a4921;
+    /* Color verde musgo */
+    color: #ffffff;
+    /* Color del texto en el footer */
 }

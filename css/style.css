@@ -9,6 +9,7 @@
     /* Estilos para el navbar */
     .navbar {
         padding: 20px 0;
+        background-color: #556B2F;
     }
 
     .navbar-brand img {
@@ -72,5 +73,10 @@
     .btn-primary:hover {
         background-color: #0056b3;
         border-color: #0056b3;
+    }
+
+    footer {
+        background-color: #3a4921; /* Color verde musgo */
+        color: #ffffff; /* Color del texto en el footer */
     }
 
