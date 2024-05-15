@@ -1,0 +1,32 @@
+    /* Estilos generales */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* Estilos para el navbar */
+    .navbar {
+        padding: 20px 0;
+        background-color: #556B2F;
+    }
+
+    .navbar-brand img {
+        height: 40px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+    }
+
+    #map{
+        height: 500px;
+        width: 100%;
+    }
+    footer {
+        background-color: #3a4921; /* Color verde musgo */
+        color: #ffffff; /* Color del texto en el footer */
+    }
+
+    

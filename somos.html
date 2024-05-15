@@ -65,19 +65,19 @@
                         en cada producto que ofrecemos. Ubicados en el corazón de Santiago, te invitamos a descubrir el
                         delicioso mundo de los hongos con nosotros.</p>
                     <!-- Campo de entrada para la ciudad -->
-                    <div class="form-group">
-                        <label for="ciudad">Ingrese el nombre de la ciudad:</label>
-                        <input type="text" id="ciudad" class="form-control" placeholder="Ingresar ciudad">
-                    </div>
-                    <!-- Botón para obtener información meteorológica -->
-                    <button id="btn-cargar" class="btn btn-primary">Obtener Clima</button>
-                    <!-- Contenedor para mostrar la información meteorológica -->
-                    <div id="weather-info" class="mt-3"></div>
+
                 </div>
             </div>
         </section>
     </div>
 
+    <section>
+        <p class="titulo_mapa">nuestra ubicación</p>
+        <div id="map">
+            <p>a</p>
+        </div>
+    </section>
+    
     <!-- Pie de página -->
     <footer class="text-center">
         <div class="container">
@@ -89,9 +89,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <script src="js/mapa.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
     <!-- Tu archivo de JavaScript personalizado -->
-    <script src="js/weather.js"></script>
+
 </body>
 
 </html>

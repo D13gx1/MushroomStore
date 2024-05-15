@@ -75,9 +75,31 @@ footer {
     line-height: 1.6;
 }
 
+.titulo_mapa {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif; /* Una fuente elegante */
+    background-color: #f8f9fa; /* Color de fondo */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
 footer {
     background-color: #3a4921;
     /* Color verde musgo */
     color: #ffffff;
     /* Color del texto en el footer */
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    margin: 0 auto 0px; /* Esto centra el mapa horizontalmente */
 }
